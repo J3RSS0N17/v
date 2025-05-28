@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 3px solid #00aaff;
+}
+
+header .contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header h1 span {
+    color: white;
+}
+
+header strong {
+    color: #00aaff;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.activo {
+    color: #00aaff;
+}
+
+.hero {
+    background: url('images/cabecera.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.boletin {
+    background: #222;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.boletin input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 80%;
+    border: none;
+    margin-right: 10px;
+}
+
+.boletin button {
+    padding: 10px 20px;
+    background: #e8491d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: white;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    flex: 1 1 250px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.servicio h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer {
+    background: #00aaff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 🧠 Media Queries para móviles */
+@media (max-width: 768px) {
+    header .contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .boletin input[type="email"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .boletin button {
+        width: 90%;
+    }
+
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio {
+        max-width: 90%;
+    }
+}
