@@ -1,9 +1,0 @@
-html 5
- head
-title      /title
-/head
-body 
-
-
-
-/body
